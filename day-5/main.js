@@ -1,3 +1,7 @@
+import web_techs from "./web_techs.js";
+import { countries } from "./countries.js";
+console.log(countries);
+console.log(web_techs);
 //question1
 const array= Array()
 //question2
@@ -11,7 +15,7 @@ console.log(firstName);
 let middleName= names[3]
 console.log(middleName);
 let lastIndex= names.length-1
-lastName= names[lastIndex]
+ let lastName= names[lastIndex]
 console.log(lastName);
 //question5
 let mixedData= ['bolanle','nafisat','kemi',1,2,3,4]
@@ -92,13 +96,7 @@ console.log(itCompanies);
 
 //exercise level2
 //question1
-const myArr = []
-export { myArr }
-import { myArr } from './countries.js'
-const Array=[]
-export {Array}
-import{Array} from './web_techs.js'
-question2
+//question2
 let text =
 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 const textArray = text.split(' ')
@@ -115,7 +113,7 @@ console.log(shoppingCart);
 //question6
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
-fullStack= frontEnd.concat(backEnd)
+ let fullStack= frontEnd.concat(backEnd)
 console.log(fullStack)
 //exercise3
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
