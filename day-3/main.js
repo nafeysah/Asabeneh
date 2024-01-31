@@ -66,9 +66,19 @@ console.log(now.getTime());
 //level2//
 const baseValue = prompt('Enter the base of a triangle: ');
 const heightValue = prompt('Enter the height of a triangle: ');
+//calculate the area
+const areaValue=(baseValue * heightValue)*0.5;
 
-// calculate the area
-const areaValue = (baseValue * heightValue)*0.5;
+// //perimeter
+// const perimeter= prompt('enter the value of side a')
+// const perimaterb = prompt('enter the value of side b')
+// const perimeterc = prompt ('enter the values of side c')
+// const perimetervalue= (perimeter+perimaterb+perimeterc)
 
-// 
-console.log(areaValue);
+// const width= prompt('enter the width value')
+// const length= prompt('enter the length value')
+
+// const  rad = prompt('enter the radius of the circle')
+// const PI = 3.14
+// const area = (rad*rad*PI)
+// const peri = (2*(length+width))

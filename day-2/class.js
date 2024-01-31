@@ -42,6 +42,8 @@ let men='python'
 let women='jargon'
 console.log(men.endsWith('on'));
 console.log(women.endsWith('on'));
+let dad=' I hope this course is not full of jargon'
+console.log(dad.includes('jargon'))
 let randomNum = Math.random()        
 let numBtnfiftyAndhundred = randomNum * 101
 console.log(numBtnfiftyAndhundred)
@@ -62,12 +64,23 @@ console.log(randNumRoundToFloor)
 let pod = 'javascript'
 console.log();
 let mum = 'You cannot end a sentence with because because because is a conjunction'
-console.log(mum.substr('because'))
+console.log(mum.substr(31,31,31))
 //level3//
 let rose = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
-console.log(rose.match('love'));
+console.log(rose.match('/love/gi'));
 let sunflower = 'You cannot end a sentence with because because because is a conjunction'
-console.log(sunflower.match('because'))
+console.log(sunflower.match('/because/gi'))
 const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-let RegExp=/\d+/
-console.log(sentence.match(RegExp))
+let inequalities = /[%@$#;?$&&!]/gi
+let replace = sentence.replace(inequalities, " ")
+console.log(replace);
+let extract = "Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month."
+let extractNum = /\d+/gi
+console.log(extract.match(extractNum));
+let a = extract.match(extractNum)
+let ai = +a[0] * 12
+let bi = +a[2] *12
+let  output = ai + bi+ 10000
+console.log(ai);
+console.log(bi);
+console.log(output);
