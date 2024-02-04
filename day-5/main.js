@@ -111,6 +111,18 @@ console.log(shoppingCart);
 shoppingCart.splice(4,1);
 console.log(shoppingCart);
 //question4
+if (countries.includes("ethiopia")) {
+    console.log("ETHIOPIA")
+} else {
+    countries.push("ethipia");
+}
+
+if (web_techs.includes("sass")) {
+    console.log("sass is a preprocessor")
+} else {
+    web_techs.push("sass");
+}
+
 //question6
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
@@ -139,5 +151,11 @@ console.log(average);
 //ranges
 console.log(Math.max(ages)-Math.min(ages));
 //question2
-console.log((countries.length/2));
+
+console.log(countries[5]);
+console.log((countries.length)/2);
+const firstHalf=countries.splice(0,6)
+console.log(firstHalf);
+const secondHalf= countries.splice(11)
+console.log(secondHalf);
 
