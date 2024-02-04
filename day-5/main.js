@@ -110,6 +110,7 @@ shoppingCart.push('sugar');
 console.log(shoppingCart);
 shoppingCart.splice(4,1);
 console.log(shoppingCart);
+//question4
 //question6
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
@@ -129,3 +130,14 @@ const median =Math.floor(ages.length/2)
 console.log(median);
 console.log(ages[5]);
 //average age
+let sum = 0;
+for (let i= 0;i<ages.length;i++){
+sum+=ages
+const average= sum/ages.length
+console.log(average);
+}
+//ranges
+console.log(Math.max(ages)-Math.min(ages));
+//question2
+console.log((countries.length/2));
+

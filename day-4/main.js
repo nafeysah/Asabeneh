@@ -46,7 +46,7 @@ if(num>=80){
 }else if (num<=49){
     console.log('F');
 }
-QUESTION2
+//QUESTION2
 let months = prompt('enter month')
 let monthh = months.toLowerCase()
 switch (month) {
@@ -86,7 +86,7 @@ switch (month) {
     case 'august':
     console.log('it is summer')
 }
-question3
+//question3
 let day = prompt('what day is it today')
 let days= day.toLowerCase()
 switch(day){
